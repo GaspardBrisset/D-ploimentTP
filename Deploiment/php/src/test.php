@@ -2,14 +2,14 @@
 
 require_once("./classes/user.php;");
 
-$utilisateur = new User("cloe.cordeiro@outlook.com", "Gaspar Cordeiro", "Cloé", 27);
+$utilisateur = new User("JeanFile@gmail.com", "File", "Jean", 27);
 var_dump($utilisateur->isValid());
 
-$utilisateur2 = new User("cloe.cordeiro.com", "Gaspar Cordeiro", "Cloé", 17);
+$utilisateur2 = new User("LucArne.gmail.com", "Arne", "Luc", 17);
 var_dump($utilisateur2->isValid());
 
-$utilisateur2 = new User("cloe.cordeiro.com", "", "Cloé", 17);
+$utilisateur3 = new User("JackCoste.com", "", "Jack", 17);
 var_dump($utilisateur2->isValid());
 
-$utilisateur2 = new User("cloe.cordeiro.com", "Gaspar Cordeiro", "", 18);
+$utilisateur4 = new User("JackCoste.com", "Coste", "", 18);
 var_dump($utilisateur2->isValid());
